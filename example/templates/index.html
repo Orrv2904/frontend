@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina</title>
+    <title>Index</title>
 </head>
 <body>
     <nav>
         <ul id="nav">
-            <li><a href="{{ url_for('primera') }}">Primera</a></li>
-            <li><a href="{{ url_for('segunda') }}">Segunda</a></li>
-            <li><a href="{{ url_for('tercera') }}">Tercera</a></li>
+            <li><a href="" class="nav-link" data-page="first">First</a></li>
+            <li><a href="" class="nav-link" data-page="second">Second</a></li>
+            <li><a href="" class="nav-link" data-page="third">Third</a></li>
         </ul>
     </nav>
     
     <hr>
 
-    {% block body %}
-
-    {% endblock %}
+    <div id="body">
+        
+    </div>
 
 </body>
 </html>
