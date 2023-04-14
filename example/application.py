@@ -15,15 +15,17 @@ text = [
     "R2D2 Rodriguez"
 ]
 
+
 @app.route("/first")
 def first():
-    return render_template("primera.html")
+    return text[0]
+
 
 @app.route("/second")
 def second():
-    return render_template("segunda.html")
+    return text[1]
 
 
 @app.route("/third")
 def third():
-    return render_template("tercera.html")
+    return text[2]

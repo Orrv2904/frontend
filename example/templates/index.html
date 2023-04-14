@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
 </head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () =>{
+        load_page('first');
+
+        document.querySelectorAll('.nav-link').forEach
+    })
+    function load_page(name) {
+        const request = new XMLHttpRequest();
+
+        request.open('GET', `/${name}`);
+        request.onload = () => {
+            const response = request.responseText;
+            document.querySelector('#body').innerHTML = response;
+        }
+        request.send();
+    }
+
+</script>
+
 <body>
     <nav>
         <ul id="nav">
@@ -18,7 +38,7 @@
     <hr>
 
     <div id="body">
-        
+
     </div>
 
 </body>
